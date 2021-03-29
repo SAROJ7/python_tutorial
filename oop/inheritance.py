@@ -1,7 +1,5 @@
 
 
-
-
 class Employee:
 
     raise_amount = 1.04
