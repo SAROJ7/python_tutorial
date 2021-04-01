@@ -1,0 +1,10 @@
+2021-04-02 01:31:51,125:DEBUG:Add: 20 + 10 = 30
+2021-04-02 01:31:51,125:DEBUG:Subtract: 20 - 10 = 10
+2021-04-02 01:31:51,125:DEBUG:Multiply: 20 * 10 = 200
+2021-04-02 01:31:51,125:DEBUG:Divide: 20 / 10 = 10
+Traceback (most recent call last):
+  File "logging-sample.py", line 36, in <module>
+    div_result = divide(num1, num2)
+  File "logging-sample.py", line 19, in divide
+    return x / 0
+ZeroDivisionError: division by zero
