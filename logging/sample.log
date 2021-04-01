@@ -1,0 +1,5 @@
+2021-04-02 02:14:37,969:__main__:Tried to Divide by 0
+Traceback (most recent call last):
+  File "logging-sample.py", line 38, in divide
+    result = x / y
+ZeroDivisionError: division by zero

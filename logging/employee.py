@@ -1,9 +1,19 @@
 import logging
 
+#Create a custom logger
+logger = logging.getLogger(__name__)
 
-logging.basicConfig(filename='employee.log',
-    level=logging.INFO,
-    format='%(levelname)s:%(message)s')
+
+#create Handler
+file_handler = logging.FileHandler('employee.log')
+file_handler.setLevel(logging.INFO)
+
+#Create formatters and add it to handlers
+formatter = logging.Formatter('%(levelname)s:%(name)s:%(message)s')
+file_handler.setFormatter(formatter)
+
+#Add Handler to the logger
+logger.addHandler(file_handler)
 
 class Employee:
     """A Sample Employee class"""
@@ -11,7 +21,7 @@ class Employee:
         self.first = first
         self.last = last
         
-        logging.info(f'Created Employee: {self.fullname} - {self.email}')
+        logger.info(f'Created Employee: {self.fullname} - {self.email}')
     
 
     @property
