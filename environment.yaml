@@ -114,6 +114,7 @@ dependencies:
     - msgpack==1.0.2
     - multidict==5.0.0
     - multipledispatch==0.6.0
+    - mylib==0.0.1
     - nbclient==0.5.3
     - nbconvert==6.0.7
     - nbformat==5.1.2
@@ -125,6 +126,7 @@ dependencies:
     - paramiko==2.7.2
     - parso==0.8.1
     - pika==1.1.0
+    - pillow==8.2.0
     - plyvel==1.2.0
     - prometheus-client==0.9.0
     - psutil==5.8.0
