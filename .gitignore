@@ -1,2 +1,5 @@
 .vscode
 .ipynb_checkpoints
+*.jpg
+*.png
+jpeg.py
